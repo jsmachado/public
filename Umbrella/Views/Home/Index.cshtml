@@ -1,4 +1,40 @@
-﻿
+﻿@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <title>Minimal SignalR Random 1~100 Ticker</title>
+</head>
+<body>
+
+    <div>Random 1~100 Ticker Coming from Server: <span id="entryPoint"></span></div>
+
+
+    <!-- SignalR Mandatory -->
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.2.2.min.js"></script>
+    <script src="signalr/hubs"></script>
+    <!-- SignalR Mandatory -->
+
+
+    <script type="text/javascript">
+        $(function () {
+            var $entryPoint = $("#entryPoint");
+            var tickerHub = $.connection.tickerHub;
+
+            // Called from the server
+            tickerHub.client.clientReceiveMessage = function (message) {
+                $entryPoint.html(message);
+            };
+            $.connection.hub.start();
+        });
+    </script>
+
+</body>
+</html>
+
+
 
 
 
