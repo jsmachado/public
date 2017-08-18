@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionRoot", "SolutionRoo
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "umbrella-client", "umbrella-client\umbrella-client.csproj", "{F9E78486-2929-4196-9AA9-02134AFDD837}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AA9F7D8C-CC47-4965-AE9B-58537A32CE9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA9F7D8C-CC47-4965-AE9B-58537A32CE9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA9F7D8C-CC47-4965-AE9B-58537A32CE9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9E78486-2929-4196-9AA9-02134AFDD837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9E78486-2929-4196-9AA9-02134AFDD837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9E78486-2929-4196-9AA9-02134AFDD837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9E78486-2929-4196-9AA9-02134AFDD837}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

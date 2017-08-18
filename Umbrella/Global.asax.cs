@@ -8,6 +8,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Microsoft.Owin.Cors;
 
 [assembly: OwinStartup(typeof(Umbrella.Startup))] // Owin entry point.
 namespace Umbrella
@@ -34,6 +35,7 @@ namespace Umbrella
     {
         public void Configuration(IAppBuilder app)
         {
+            app.UseCors(CorsOptions.AllowAll);
             app.MapSignalR();
         }
     }
